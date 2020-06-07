@@ -1,11 +1,13 @@
 <div class="head-container">
-    <div class="title-container">
-        <router-link id="title" to="/">Renuka Gupta</router-link>
+    <div class="title-container" id="title-container">
+        <router-link id="title" to="/">Renuka Gupta </router-link>
     </div>
-    <div class="nav-container">
+    <div class="nav-container" id="nav-container">
         <router-link class="nav-item" to="/">Home</router-link>
         <router-link class="nav-item" to="/About">About</router-link>
         <router-link class="nav-item" to="/Projects">Projects</router-link>
         <router-link class="nav-item" to="/Blog">Blog</router-link>
     </div>
+    <div v-if="!this.isToggled" id="nav-toggle"> <i v-on:click="toggleNavigation()" class="fas fa-chevron-down"></i> </div>
+    <div v-if="this.isToggled" id="nav-toggle"> <i v-on:click="toggleNavigation()" class="fas fa-chevron-up"></i> </div>
 </div>
