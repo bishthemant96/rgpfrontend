@@ -42,3 +42,21 @@
     text-decoration: none !important;
 }
 
+@media only screen and (max-width: 600px) {
+    .head-container {
+        padding: 0px;
+        margin: 50px 0px 20px 0px;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .title-container {
+        width: 60%;
+    }
+
+    #title {
+        font-size: 25px;
+    }
+}
