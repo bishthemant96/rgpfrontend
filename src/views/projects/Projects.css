@@ -1,0 +1,12 @@
+.navigation-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.filler {
+    display: block;
+    height: 100vh;
+}
