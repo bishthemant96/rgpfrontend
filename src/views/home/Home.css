@@ -1,7 +1,7 @@
 #banner {
     display: flex;
 
-    height: 70vh;
+    height: 100vh;
 
     justify-content: center;
     align-items: flex-start;
@@ -21,7 +21,7 @@
 
 #tagline{
     margin: 0px;
-    padding: 5px;
+    padding: 8px;
 
     border: 1px solid white;
 }
