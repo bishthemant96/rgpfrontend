@@ -1,0 +1,46 @@
+.blogpost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 0px;
+
+    width: 100%;
+    height: 40vh;
+}
+
+.blogpost-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 50%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.blogpost-header {
+    width: 100%;
+    padding: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.blogpost-description {
+    width: 100%;
+    padding: 20px;
+}
+
+.blogpost-photo {
+    display: block;
+    
+    height: 100%;
+    width: 50%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

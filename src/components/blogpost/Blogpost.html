@@ -1,0 +1,17 @@
+<div>
+    <div v-if="isDefaultLayout" class="blogpost">
+        <div class="blogpost-content">
+            <div class="blogpost-header"> Why sustainable development is necessary? </div>
+            <div class="blogpost-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+        <div class="blogpost-photo" :style="{ backgroundImage: `url(${backgroundUrl1})` }">
+        </div>
+    </div>
+    <div v-else class="blogpost">
+        <div class="blogpost-photo" :style="{ backgroundImage: `url(${backgroundUrl2})` }"> </div>
+        <div class="blogpost-content">
+            <div class="blogpost-header"> Building Biology </div>
+            <div class="blogpost-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+    </div>
+</div>

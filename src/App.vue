@@ -1,24 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <Header/>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Header from "./components/header/Header.vue";
-
 export default {
-  name: "App",
-  components: {
-    Header
-  }
+  name: "App"
 }
 </script>
 
 <style>
+body{
+  margin: 0px !important;
+  padding: 0px !important;
+
+  background-color: white;
+}
 </style>
-
-
