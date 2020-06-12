@@ -10,7 +10,7 @@
     color: white;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
 
     background-image: url(../../assets/banner.jpg);
     background-repeat: no-repeat;
@@ -22,6 +22,5 @@
 #tagline{
     margin: 0px;
     padding: 8px;
-
     border: 1px solid white;
 }

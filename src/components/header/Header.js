@@ -24,10 +24,8 @@ export default {
         document.getElementById("nav-container").style.display = 'none';
         document.getElementsByClassName("head-container")[0].style.flexWrap = "wrap";
       }
-
       
       this.isToggled = !this.isToggled;
-      
     }
   }
 }
