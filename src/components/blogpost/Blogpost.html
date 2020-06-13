@@ -1,14 +1,27 @@
 <div>
     <div v-if="isDefaultLayout" class="blogpost">
         <div class="blogpost-content">
-            <div class="blogpost-header"> Experiential Spaces </div>
-            <div class="blogpost-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div class="blogpost-header" :style="{ textAlign: 'right' }"> Experiential Spaces </div>
+            <div class="blogpost-description" :style="{ textAlign: 'right' }">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
         </div>
-        <div class="blogpost-photo" :style="{ borderLeft: 'none' , backgroundImage: `url(${getImagePath()})` }">
+
+        <div class="line-separtaion"></div>
+
+        <div class="blogpost-photo" :style="{ backgroundImage: `url(${getImagePath()})` }">
+            <div class="blogpost-photo-overlay">
+                <span class="blogpost-photo-caption"> A cross ventilation implementation. </span>
+            </div>
         </div>
     </div>
     <div v-else class="blogpost">
-        <div class="blogpost-photo" :style="{ borderRight: 'none' , backgroundImage: `url(${getImagePath()})` }"> </div>
+        <div class="blogpost-photo" :style="{ backgroundImage: `url(${getImagePath()})` }"> 
+            <div class="blogpost-photo-overlay">
+                <span class="blogpost-photo-caption"> Use of handmade designs. </span>
+            </div>
+        </div>
+
+        <div class="line-separtaion"></div>
+
         <div class="blogpost-content">
             <div class="blogpost-header"> Personalized Details </div>
             <div class="blogpost-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
