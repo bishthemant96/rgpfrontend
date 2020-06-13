@@ -1,0 +1,55 @@
+.project-preview-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 60vh;
+
+    padding: 2% 0%;
+
+}
+
+.project-preview-photo-container {
+    width: 40%;
+    height: 100%;
+}
+
+.project-preview-photo {
+    width: 606px;
+    height: 350px;
+}
+
+.project-preview-detail {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: baseline;
+
+    width: 30%;
+    height: 50%;
+
+    color: darkslategrey;
+}
+
+.project-preview-item{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.project-preview-heading {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.project-preview-timestamp {
+    font-style: italic;
+}
+
+.project-preview-description {
+    
+}
+
+.project-preview-link {
+    font-style: italic;
+}
