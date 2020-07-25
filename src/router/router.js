@@ -6,7 +6,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/home/Home.vue';
 import About from '../views/about/About.vue';
 import Projects from '../views/projects/Projects.vue';
-import Blog from '../views/blog/Blog.vue';
+import Research from '../views/research/Research.vue';
 
 Vue.use(VueRouter)
 
@@ -27,9 +27,9 @@ Vue.use(VueRouter)
     component: Projects
   },
   {
-    path: '/Blog',
-    name: 'Blog',
-    component: Blog
+    path: '/Research',
+    name: 'Research',
+    component: Research
   }
 ]
 
