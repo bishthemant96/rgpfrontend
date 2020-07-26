@@ -8,5 +8,11 @@ export default {
       Header,
       Blogpost,
       Footer
-    }
+    },
+
+    // beforeMount(){
+    //   window.addEventListener("scroll", ()=>{
+    //     document.getElementById("banner").style.opacity = 1 - window.scrollY/400;
+    //   })
+    // }
   }

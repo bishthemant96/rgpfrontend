@@ -4,10 +4,12 @@
     align-items: center;
     flex-wrap: wrap;
 
-    padding: 81px 81px 0px 81px;
-
     width: auto;
-    height: 60vh;
+    height: 40vh;
+    
+    margin: 5% 8%;
+/* 
+    border: 1px solid black; */
 }
 
 .blogpost-content {
@@ -17,32 +19,20 @@
     flex-wrap: wrap;
 
     height: 100%;
-    width:40%;
+    width:45%;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-}
-
-.blogpost-header {
-    align-self: flex-end;
-
-    width: 100%;
-    padding: 20px 0px;
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .blogpost-description {
-    align-self: flex-start;
-
     width: 100%;
     padding: 20px 0px;
 }
 
 .line-separtaion{
     display: block;
-    height: 60%;
+    height: 100%;
     width: 2px;
     background-color: lightcoral;
 }
@@ -51,7 +41,7 @@
     display: block;
     
     height: 100%;
-    width: 52%;
+    width: 45%;
 
     transition: .5s ease;
 

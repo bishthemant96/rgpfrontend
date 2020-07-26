@@ -1,6 +1,6 @@
 .navigation-container {
     display: flex;
-    height: 20vh;
+    height: auto;
 
     justify-content: center;
     align-items: flex-start;
@@ -8,13 +8,13 @@
 }
 
 #banner {
-    height: 80vh;
+    height: 85vh;
 
     display: flex;
     justify-content: left;
     align-items: center;
 
-    padding: 0% 10%;
+    margin: 0% 8%;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -26,6 +26,5 @@
 
 #intro {
     width: 50%;
-
-    font-size: 25px;
+    font-size: 24px;
 }

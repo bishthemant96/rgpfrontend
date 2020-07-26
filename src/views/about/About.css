@@ -1,30 +1,23 @@
 .introduction {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+
+    margin: 0% 8%;
 
 }
 
 .about-introduction {
     display: block;
-    width: 40%;
+    width: 50%;
 
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     text-align: right;
 }
 
-.about-photo-wrapper {
-    display: flex;
-    height: 50vh;
-    width: 40%;
-
-    align-items: center;
-
-}
-
 .about-photo {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    border-radius: 50% 0% 50% 50%;
 }
