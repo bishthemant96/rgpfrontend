@@ -1,3 +1,20 @@
+<template>
+<div class="head-container">
+    <div class="title-container" id="title-container">
+        <img id="logo" src="../assets/stamp.jpg"/>
+        <router-link id="title" to="/"> रेनुका गुप्ता </router-link>
+    </div>
+    <div class="nav-container" id="nav-container">
+        <router-link class="nav-item" to="/">Home</router-link>
+        <router-link class="nav-item" to="/About">About</router-link>
+        <router-link class="nav-item" to="/Projects">Projects</router-link>
+        <router-link class="nav-item" to="/Research">Research</router-link>
+    </div>
+</div>
+
+</template>
+
+<style>
 .head-container {
     display: flex;
     justify-content: space-between;
@@ -50,3 +67,11 @@
     font-weight: 400;
     text-decoration: none;
 }
+
+</style>
+
+<script>
+export default {
+  name: 'Header'
+}
+</script>

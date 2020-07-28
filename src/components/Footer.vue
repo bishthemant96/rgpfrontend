@@ -1,3 +1,15 @@
+<template>
+<div id="footer">
+    <div id="footer-note-1">
+        &#169; Renuka Gupta 2020. All Rights Reserved.
+    </div>
+    <div id="footer-note-2">
+        Best viewed on desktop.
+    </div>
+</div>
+</template>
+
+<style>
 #footer {
     display: flex;
     justify-content: center;
@@ -31,3 +43,10 @@
     width: 100%;
     text-align: center;
 }
+</style>
+
+<script>
+export default {
+    name: 'Footer'
+  }
+</script>

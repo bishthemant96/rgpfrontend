@@ -14,8 +14,8 @@
 export default {
   name: 'App',
     components: {
-      Header: () => import('@/components/header/Header.vue'),
-      Footer: () => import('@/components/footer/Footer.vue'),
+      Header: () => import('@/components/Header.vue'),
+      Footer: () => import('@/components/Footer.vue'),
     }
 };
 </script>

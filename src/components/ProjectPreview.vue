@@ -1,3 +1,25 @@
+<template>
+<div class="project-preview-container">
+    <img class="project-preview-photo" src="../assets/current-project-1.jpg"/>
+    
+
+    <div class="project-preview-detail">
+        <div class="project-preview-item project-preview-heading">
+            Reception, Temple Tree Retreat
+        </div>
+
+        <div class="project-preview-item project-preview-timestamp">
+            Aug '19 - Mar '20
+        </div>
+
+        <div class="project-preview-item project-preview-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+        </div>
+    </div>
+</div>
+</template>
+
+<style>
 .project-preview-container {
     display: flex;
     align-items: center;
@@ -51,3 +73,10 @@
     font-size: 14px;
     font-style: italic;
 }
+</style>
+
+<script>
+export default {
+    name: 'ProjectPreview',
+  }
+</script>
