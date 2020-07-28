@@ -27,7 +27,7 @@
         justify-content: space-between;
 
         height: 40vh;
-        margin: 2% 8%;
+        margin: 2% 0%;
 
         font-family: 'Montserrat', sans-serif;
 

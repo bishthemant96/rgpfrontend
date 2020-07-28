@@ -1,59 +1,60 @@
 <template>
   <div id="projects">    
-    <div class="section-header"> RECENT PROJECTS </div>
+    <v-card flat outlined tile class="section-header"> RECENT PROJECTS </v-card>
     
     <ProjectPreview/>
 
-    <div class="section-header"> OTHER PROJECTS </div>
+    <v-card flat outlined tile class="section-header"> OTHER PROJECTS </v-card>
 
-    <div class="other-section">
-      
-      <Card/>
-      <Card/>
-      <Card/>
-    </div>
+    <v-container>
+      <v-row align="center" justify="space-between" no-gutters>
+        <v-col cols="12" md="3">
+          <Card/>
+        </v-col>
+
+        <v-col cols="12" md="3">
+          <Card/>
+        </v-col>
+        
+        <v-col cols="12" md="3">
+          <Card/>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 
 
 <style>
-.section-header {
-    width: auto;
-    margin: 5% 8% 2% 8%;
+  #projects{
+    margin: 0% 8%;
+  }
 
-    text-align: center;
+  .section-header {
+      margin-top: 4%;
+      margin-bottom: 1%;
 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
+      text-align: center;
 
-    color: black;
-
-    border-bottom: 1px solid black;
-}
-
-.other-section{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin: 0% 8%;
-}
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+  }
 </style>
 
 
 
 <script>
-import ProjectPreview from "@/components/ProjectPreview.vue";
-import Card from "@/components/Card.vue";
+  import ProjectPreview from "@/components/ProjectPreview.vue";
+  import Card from "@/components/Card.vue";
 
-export default {
-    name: 'Projects',
-    components: {
-      ProjectPreview,
-      Card
+  export default {
+      name: 'Projects',
+      components: {
+        ProjectPreview,
+        Card
+      }
     }
-  }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-    <v-card max-width="330">
+    <v-card tile>
         <v-img height="200px" :src="require('../assets/university.jpeg')"/>
         <v-card-title>Care Taker Unit</v-card-title>
         <v-card-subtitle> Temple Tree Retreat </v-card-subtitle>
