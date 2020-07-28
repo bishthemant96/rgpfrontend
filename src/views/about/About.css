@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
 
+    height: 90vh;
+
     margin: 0% 8%;
 
 }
@@ -20,4 +22,27 @@
     height: 500px;
     width: 500px;
     border-radius: 50% 0% 50% 50%;
+}
+
+.academics {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../../assets/university.jpeg);
+    background-size: cover;
+    
+    margin: 2% 8%;
+    width: auto;
+    height: 40vh;
+
+    color: white !important;
+}
+
+.about-academics{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }

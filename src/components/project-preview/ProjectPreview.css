@@ -3,20 +3,15 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 50vh;
+    height: 40vh;
     width: auto;
 
-    margin: 2% 10%;
+    margin: 2% 8%;
 
-}
-
-.project-preview-photo-container {
-    width: 45%;
-    height: 100%;
 }
 
 .project-preview-photo {
-    width: 100%;
+    width: 45%;
     height: 100%;
 }
 
@@ -30,7 +25,7 @@
     width: 45%;
     height: 50%;
 
-    color: darkslategrey;
+    color: black;
 }
 
 .project-preview-item{
@@ -39,18 +34,20 @@
 }
 
 .project-preview-heading {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .project-preview-timestamp {
+    font-size: 14px;
     font-style: italic;
 }
 
 .project-preview-description {
-    
+    font-size: 14px;
 }
 
 .project-preview-link {
+    font-size: 14px;
     font-style: italic;
 }
