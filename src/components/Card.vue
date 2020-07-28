@@ -7,12 +7,14 @@
 </template>
 
 
+
 <style scoped>
 </style>
 
 
+
 <script>
-export default {
-    name: "Card"
-}
+    export default {
+        name: "Card"
+    }
 </script>
