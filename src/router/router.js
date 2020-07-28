@@ -2,34 +2,28 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-//Importing views.
-import Home from '../views/home/Home.vue';
-import About from '../views/about/About.vue';
-import Projects from '../views/projects/Projects.vue';
-import Research from '../views/research/Research.vue';
-
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/Home.vue')
   },
   {
     path: '/About',
     name: 'About',
-    component: About
+    component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/About.vue')
   },
   {
     path: '/Projects',
     name: 'Projects',
-    component: Projects
+    component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/Projects.vue')
   },
   {
     path: '/Research',
     name: 'Research',
-    component: Research
+    component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/Research.vue')
   }
 ]
 

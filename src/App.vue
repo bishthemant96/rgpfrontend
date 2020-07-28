@@ -1,20 +1,24 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <v-app> 
+    <Header/>
+
+    <v-main>
+      <router-view></router-view>
+    </v-main>     
+
+    <Footer/>
+  </v-app>
 </template>
 
 <script>
 export default {
-  name: "App"
-}
+  name: 'App',
+    components: {
+      Header: () => import('@/components/header/Header.vue'),
+      Footer: () => import('@/components/footer/Footer.vue'),
+    }
+};
 </script>
 
-<style>
-body{
-  margin: 0px !important;
-  padding: 0px !important;
-  
-  background-color: white;
-}
+<style scoped>
 </style>
