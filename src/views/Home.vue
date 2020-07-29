@@ -9,33 +9,36 @@
 </template>
 
 <style>
-#banner {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  #home {
+        margin: 0% 8%;
+  }
 
-    height: 85vh;
-    margin: 0% 8%;
-    padding-right: 40%;
+  #banner {
+      display: flex;
+      justify-content: left;
+      align-items: center;
 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    
-    background-image: url(../assets/calli.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+      height: 85vh;
+      padding-right: 40%;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      
+      background-image: url(../assets/calli.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
 </style>
 
 <script>
-import Blogpost from "@/components/Blogpost.vue";
+  import Blogpost from "@/components/Blogpost.vue";
 
-export default {
-    name: 'Home',
-    components: {
-      Blogpost
-    }
+  export default {
+      name: 'Home',
+      components: {
+        Blogpost
+      }
   }
 </script>
 

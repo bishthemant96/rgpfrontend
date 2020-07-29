@@ -1,8 +1,7 @@
 <template>
     <div class="head-container">
         <div class="title-container" id="title-container">
-            <img id="logo" src="../assets/stamp.jpg"/>
-            <router-link id="title" to="/"> रेनुका गुप्ता </router-link>
+            <router-link id="title" to="/"> Renuka Gupta </router-link>
         </div>
         <div class="nav-container" id="nav-container">
             <router-link class="nav-item" to="/"> Home </router-link>
@@ -20,7 +19,8 @@
         display: flex;
         justify-content: space-between;
 
-        margin: 1% 8%;
+        padding: 3% 0%;
+        margin: 0% 8%;
     }
 
     .title-container {
@@ -28,22 +28,13 @@
         align-items: center;
     }
 
-    #logo{
-        height: 75px;
-        width: 75px;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-
     #title {
         padding-top: 5px;
-        padding-left: 10px;
-        border-left: 1px solid black;
 
         color: black !important;
-        font-size: 40px;
-        font-family: 'Kalam', sans-serif;
-        font-weight: 300;
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
         text-decoration: none;
     }
 
@@ -59,7 +50,7 @@
         color: black !important;
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 300;
         text-decoration: none;
     }
 </style>

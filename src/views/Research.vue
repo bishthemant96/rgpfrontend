@@ -1,19 +1,25 @@
 <template>
     <div id="research">
         <div class="filler">
-            research may appear here anytime.
+            <div> Research is still going on. </div>
         </div>        
     </div>
 </template>
 
 <style>
+    .filler{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
 </style>
 
 <script>
-export default {
-    name: 'Research',
-    components: {
+    export default {
+        name: 'Research',
+            components: {
+        }
     }
-  }
 </script>
 

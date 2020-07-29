@@ -35,7 +35,7 @@
         flex-wrap: wrap;
 
         height: 40vh;
-        margin: 5% 8%;
+        margin: 5% 0%;
         font-family: 'Montserrat', sans-serif;
     }
 
