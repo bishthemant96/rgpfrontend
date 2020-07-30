@@ -7,11 +7,6 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/Home.vue')
-  },
-  {
-    path: '/About',
     name: 'About',
     component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/About.vue')
   },

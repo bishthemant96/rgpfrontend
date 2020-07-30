@@ -4,8 +4,7 @@
             <router-link id="title" to="/"> Renuka Gupta </router-link>
         </div>
         <div class="nav-container" id="nav-container">
-            <router-link class="nav-item" to="/"> Home </router-link>
-            <router-link class="nav-item" to="/About"> About </router-link>
+            <router-link class="nav-item" to="/"> About </router-link>
             <router-link class="nav-item" to="/Projects"> Projects </router-link>
             <router-link class="nav-item" to="/Research"> Research </router-link>
         </div>
@@ -43,7 +42,7 @@
         justify-content: space-between;
         align-items: center;
 
-        width: 30% !important;
+        width: 25% !important;
     }
 
     .nav-item {
