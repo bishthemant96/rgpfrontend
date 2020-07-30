@@ -3,7 +3,7 @@
         <v-container>
             <v-row no-gutters>
                 <v-col cols="8">
-                    <v-img height="300px" :src="require('../assets/university.jpeg')"/>
+                    <v-img height="350px" :src="getImagePath()"/>
                 </v-col>
 
                 <v-col cols="4">
@@ -28,6 +28,16 @@
 
 <script>
     export default {
-        name: "WideCard"
+        name: "WideCard",
+
+        props:{
+            sequence: String,
+        },
+
+        methods: {
+            getImagePath: function(){
+                return require('../assets/featured-project-' + this.sequence + '.png');
+            },
+        }
     }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <v-card tile>
-        <v-img height="180px" :src="require('../assets/university.jpeg')"/>
+        <v-img height="180px" :src="getImagePath()"/>
         <v-card-title>Care Taker Unit</v-card-title>
         <v-card-subtitle> Temple Tree Retreat </v-card-subtitle>
     </v-card>
@@ -15,6 +15,16 @@
 
 <script>
     export default {
-        name: "Card"
+        name: "Card",
+
+        props:{
+            sequence: String,
+        },
+
+        methods: {
+            getImagePath: function(){
+                return require('../assets/project-' + this.sequence + '.jpg');
+            },
+        }
     }
 </script>
