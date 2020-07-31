@@ -26,9 +26,8 @@
     }
 
     .about-introduction {
-        display: block;
         width: 50%;
-
+        
         font-size: 18px;
         font-family: 'Montserrat', sans-serif;
         text-align: justify;

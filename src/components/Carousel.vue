@@ -52,22 +52,8 @@
     name: "Carousel",
     data () {
       return {
-        colors: [
-          'green',
-          'secondary',
-          'yellow darken-4',
-          'red lighten-2',
-          'orange darken-1',
-        ],
         cycle: false,
-        slides: [
-          'First',
-          'Second',
-          'Third',
-          'Fourth',
-          'Fifth',
-        ],
       }
-  },   
+    },   
   }
 </script>

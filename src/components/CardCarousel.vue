@@ -46,25 +46,24 @@
 
 
 <script>
-export default {
-    name: "CardCarousel",
+    export default {
+        name: "CardCarousel",
 
-    data(){
-        return {
-            model: null
-        }
-    },
-    
-    methods: {
-        doToggle: function(num){
-            console.log('run');
-            this.model= this.model===null? num: null;
+        data(){
+            return {
+                model: null
+            }
         },
-
-        getImagePath: function(num){
-            return require("../assets/hobby-"+num+".jpg");
-        }
         
+        methods: {
+            doToggle: function(num){
+                console.log('run');
+                this.model= this.model===null? num: null;
+            },
+
+            getImagePath: function(num){
+                return require("../assets/hobby-"+num+".jpg");
+            }
+        }
     }
-}
 </script>

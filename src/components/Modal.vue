@@ -34,7 +34,6 @@ export default {
 
     methods: {
         closeModal: function(){
-            console.log("Emitting from modal");
             this.isVisible = false;
             this.$emit("closeModal");
         }

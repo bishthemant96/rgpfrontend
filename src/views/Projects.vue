@@ -99,7 +99,6 @@
         },
 
         closeModal: function(){
-          console.log("run the emit");
           this.isModalOpen = false;
         }
       }

@@ -11,14 +11,11 @@
 </template>
 
 <script>
-export default {
-  name: 'App',
-    components: {
-      Header: () => import('@/components/Header.vue'),
-      Footer: () => import('@/components/Footer.vue'),
-    }
-};
+  export default {
+    name: 'App',
+      components: {
+        Header: () => import('@/components/Header.vue'),
+        Footer: () => import('@/components/Footer.vue'),
+      }
+  };
 </script>
-
-<style scoped>
-</style>
