@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-sheet class="mx-auto sub-heading" color="teal lighten-3">
+        <v-sheet class="mx-auto sub-heading white--text" color="black">
             Other things I do
         </v-sheet>
 
