@@ -1,8 +1,8 @@
 <template>
   <v-card elevation="24" max-width="100%" class="mx-auto" height="100%">
       <v-carousel interval="3000" :cycle="cycle" hide-delimiter-background delimiter-icon="mdi-minus">
-        <v-carousel-item v-for="(slide, i) in slides" :key="i">
-            <v-img :src="require('../assets/project-'+Number(i+1)+'.jpg')" />
+        <v-carousel-item v-for="i in 5" :key="i">
+            <v-img :src="require('../assets/project-'+Number(i)+'.jpg')" />
         </v-carousel-item>
       </v-carousel>
 

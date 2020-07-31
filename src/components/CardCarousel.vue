@@ -1,33 +1,35 @@
 <template>
-    <div>
-        <v-sheet class="mx-auto sub-heading white--text" color="black">
-            Other things I do
-        </v-sheet>
+    <v-sheet class="card-carousel-container" flat>
+        <v-card v-for="n in 5" :key="n" max-width="20%" class="ma-0 round-card" @click="doToggle(n)" flat>
+            <v-img class="round-image" height="150px" width="150px" :src="getImagePath(n)"/>
+            <v-card-subtitle class="round-image-caption"> {{hobbies[n-1]}} </v-card-subtitle>
+        </v-card>
 
-        <v-sheet class="mx-auto" flat>
-            <v-slide-group v-model="model" class="pa-0" show-arrows>
-                <v-slide-item v-for="n in 5" :key="n" v-slot:default="{toggle}">
-                    <v-card class="ma-4 round-card" height="250" @click="toggle" flat>
-                        <v-img class="round-image" height="200px" width="200px" :src="getImagePath(n)"/>
-                        <v-card-subtitle class="round-image-caption"> Good Hobby </v-card-subtitle>
-                    </v-card>
-                </v-slide-item>
-            </v-slide-group>
-
-            <v-expand-transition>
-                <v-sheet v-if="model != null" color="grey lighten-4" height="200" tile>
-                    <v-row class="fill-height" align="center" justify="center">
-                        <h3 class="title">Selected {{ model }}</h3>
-                    </v-row>
-                </v-sheet>
-            </v-expand-transition>
-        </v-sheet>
-    </div>
+        <v-expand-transition>
+            <v-sheet v-if="model != null"  class="hobby-description" width="100%" color="teal lighten-4" height="200" tile>
+                <span>Calligraphy</span>
+                <br>
+                <v-divider/>
+                {{hobby_description[model-1]}}
+            </v-sheet>
+        </v-expand-transition>
+    </v-sheet>
 </template>
 
 
 
 <style scoped>
+    .card-carousel-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        width: 80%;
+        margin: auto;
+
+        font-family: 'Montserrat', sans-serif;
+    }
+    
     .round-image{
         border-radius: 50% !important;
     }
@@ -36,11 +38,10 @@
         text-align: center;
     }
 
-    .sub-heading{
-        text-align: center;
-        font-weight: 400;
-        font-size: 18px;
-        margin: 10% 0% 1% 0%;
+    .hobby-description{
+        padding: 20px;
+        text-align: justify;
+        text-justify: inter-word;
     }
 </style>
 
@@ -51,7 +52,15 @@
 
         data(){
             return {
-                model: null
+                model: null,
+                hobbies: ["Craft Making", "Calligraphy", "Pottery", "Bookmark Making", "Gardening"],
+                hobby_description: [
+                    "I learnt calligraphy from Popo Pingel while I was interning under Mona Doctor Pingel at Studio Nakshbandi. Popo taught us calligraphy over the span of 40 weekends to teach us about the importance of hand-eye co-ordination in the field of architecture. Ever since, I attained the hobby of pursuing calligraphy as a method of relaxation for self.",
+                    "I learnt calligraphy from Popo Pingel while I was interning under Mona Doctor Pingel at Studio Nakshbandi. Popo taught us calligraphy over the span of 40 weekends to teach us about the importance of hand-eye co-ordination in the field of architecture. Ever since, I attained the hobby of pursuing calligraphy as a method of relaxation for self.",
+                    "I learnt calligraphy from Popo Pingel while I was interning under Mona Doctor Pingel at Studio Nakshbandi. Popo taught us calligraphy over the span of 40 weekends to teach us about the importance of hand-eye co-ordination in the field of architecture. Ever since, I attained the hobby of pursuing calligraphy as a method of relaxation for self.",
+                    "I learnt calligraphy from Popo Pingel while I was interning under Mona Doctor Pingel at Studio Nakshbandi. Popo taught us calligraphy over the span of 40 weekends to teach us about the importance of hand-eye co-ordination in the field of architecture. Ever since, I attained the hobby of pursuing calligraphy as a method of relaxation for self.",
+                    "I learnt calligraphy from Popo Pingel while I was interning under Mona Doctor Pingel at Studio Nakshbandi. Popo taught us calligraphy over the span of 40 weekends to teach us about the importance of hand-eye co-ordination in the field of architecture. Ever since, I attained the hobby of pursuing calligraphy as a method of relaxation for self."
+                ]
             }
         },
         
