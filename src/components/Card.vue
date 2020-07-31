@@ -1,7 +1,7 @@
 <template>
-    <v-card tile>
+    <v-card >
         <v-img height="180px" :src="getImagePath()"/>
-        <v-card-title>Care Taker Unit</v-card-title>
+        <v-card-title>Care Taker Unit Extension</v-card-title>
         <v-card-subtitle> Temple Tree Retreat </v-card-subtitle>
     </v-card>
 </template>

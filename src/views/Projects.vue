@@ -5,17 +5,18 @@
     <v-container class="pa-0">
       <v-row class="mb-6" no-gutters> 
         <v-col cols="12">
-          <WideCard sequence="1"/> 
+          <WideCard :onClick="onCardClick" sequence="1"/> 
         </v-col>
       </v-row>
 
       <v-row no-gutters> 
         <v-col cols="12">
-          <WideCard sequence="2"/> 
+          <WideCard :onClick="onCardClick"  sequence="2"/> 
         </v-col>
       </v-row>
     </v-container>
 
+    <Modal :visible="isModalOpen" @closeModal="closeModal()"/>
 
     <v-card id="other-projects" class="section-header" color="black" dark flat tile> OTHER PROJECTS </v-card>
 
@@ -42,10 +43,7 @@
         <v-col cols="12" md="3">
           <Card sequence="5"/>
         </v-col>
-        
-        <v-col cols="12" md="3">
-          <Card sequence="6"/>
-        </v-col>
+      
       </v-row>
     </v-container>
   </div>
@@ -78,12 +76,32 @@
 <script>
   import Card from "@/components/Card.vue";
   import WideCard from "@/components/WideCard.vue";
-
+  import Modal from "@/components/Modal.vue";
+  
   export default {
       name: 'Projects',
+
       components: {
         Card,
-        WideCard
+        WideCard,
+        Modal
+      },
+
+      data: function(){
+        return {
+          isModalOpen: false,
+        }
+      },
+
+      methods: {
+        onCardClick: function(){
+          this.isModalOpen = true;
+        },
+
+        closeModal: function(){
+          console.log("run the emit");
+          this.isModalOpen = false;
+        }
       }
     }
 </script>

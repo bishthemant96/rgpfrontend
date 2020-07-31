@@ -1,5 +1,5 @@
 <template>
-    <v-card tile>
+    <v-card @click="emitClick()">
         <v-container>
             <v-row no-gutters>
                 <v-col cols="8">
@@ -32,12 +32,17 @@
 
         props:{
             sequence: String,
+            onClick: Function,
         },
 
         methods: {
             getImagePath: function(){
                 return require('../assets/featured-project-' + this.sequence + '.png');
             },
+
+            emitClick: function(){
+                this.onClick();
+            }
         }
     }
 </script>
