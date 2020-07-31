@@ -23,25 +23,25 @@
     <v-container class="pa-0">
       <v-row class="mb-6" align="center" justify="space-between" no-gutters>
         <v-col cols="12" md="3">
-          <Card sequence="1"/>
+          <Card :onClick="onCardClick" sequence="1"/>
         </v-col>
 
         <v-col cols="12" md="3">
-          <Card sequence="2"/>
+          <Card :onClick="onCardClick" sequence="2"/>
         </v-col>
         
         <v-col cols="12" md="3">
-          <Card sequence="3"/>
+          <Card :onClick="onCardClick" sequence="3"/>
         </v-col>
       </v-row>
 
       <v-row align="center" justify="space-between" no-gutters>
         <v-col cols="12" md="3">
-          <Card sequence="4"/>
+          <Card :onClick="onCardClick" sequence="4"/>
         </v-col>
 
         <v-col cols="12" md="3">
-          <Card sequence="5"/>
+          <Card :onClick="onCardClick" sequence="5"/>
         </v-col>
       
       </v-row>
