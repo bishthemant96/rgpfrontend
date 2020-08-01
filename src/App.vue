@@ -10,6 +10,14 @@
   </v-app>
 </template>
 
+
+
+<style scoped>
+  @import url("theme.css");
+</style>
+
+
+
 <script>
   export default {
     name: 'App',
