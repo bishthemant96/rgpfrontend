@@ -43,12 +43,6 @@
 
 
 
-<style scoped>
-
-</style>
-
-
-
 <script>
 export default {
     name: "Modal",
@@ -74,8 +68,7 @@ export default {
     },
 
     watch: {
-        visible: function(newValue, oldValue){
-            console.log(oldValue);
+        visible: function(newValue){
             this.isVisible = newValue;
         },
 

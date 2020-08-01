@@ -1,5 +1,5 @@
 <template>
-    <v-card @click="emitClick()">
+    <v-card @click="onClick(data['project-number'])">
         <v-img height="175px" :src="getImagePath()"/>
         <v-card-title> {{ data["project-name"].split(',')[0] }} </v-card-title>
         <v-card-subtitle> {{ data["project-name"].split(',')[1] }} </v-card-subtitle>
@@ -17,15 +17,10 @@
             data: Object,
         },
 
-
         methods: {
             getImagePath: function(){
                 return require('../assets/project-' + this.data["project-number"] + '-1.jpg');
             },
-
-            emitClick: function(){
-                this.onClick(this.data["project-number"]);
-            }
         }
     }
 </script>

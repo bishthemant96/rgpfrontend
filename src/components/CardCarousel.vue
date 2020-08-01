@@ -1,8 +1,8 @@
 <template>
     <v-sheet class="card-carousel-container" flat>
         <v-card v-for="n in data.length" :key="n" max-width="20%" class="ma-0 round-card" @click="doToggle(n)" flat tile>
-            <v-img class="round-image" height="150px" width="150px" :src="getImagePath(n)"/>
-            <v-card-subtitle :class="'round-image-caption ' + (model===n? 'teal lighten-4': '') "> {{ data[n-1]["hobby"] }} </v-card-subtitle>
+            <v-img class="rounded-circle" height="150px" width="150px" :src="require('../assets/hobby-' + n + '.jpg')"/>
+            <v-card-subtitle :class="'text-center ' + (model===n? 'teal lighten-4': '') "> {{ data[n-1]["hobby"] }} </v-card-subtitle>
         </v-card>
 
         <v-expand-transition>
@@ -27,14 +27,6 @@
         margin-bottom: 3%;
 
         font-family: 'Montserrat', sans-serif;
-    }
-    
-    .round-image{
-        border-radius: 50% !important;
-    }
-
-    .round-image-caption{
-        text-align: center;
     }
 
     .hobby-description{
@@ -62,10 +54,6 @@
         methods: {
             doToggle: function(num){
                 this.model = this.model === num? null : num;
-            },
-
-            getImagePath: function(num){
-                return require("../assets/hobby-"+num+".jpg");
             }
         }
     }

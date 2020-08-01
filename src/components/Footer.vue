@@ -21,28 +21,28 @@
 
 
 <style>
-    .footer {
-        margin: 2% 8% 0% 8%;
-        font-family: 'Montserrat', sans-serif;
-    }
+  .footer {
+    margin: 2% 8% 0% 8%;
+    font-family: 'Montserrat', sans-serif;
+  }
 
-    .footer-note{
-        font-size: 14px;
-    }
+  .footer-note{
+    font-size: 14px;
+  }
 </style>
 
 
 
 <script>
-    export default {
-        name: 'Footer',
-            
-        data: () => ({
-            icons: [
-                'mdi-facebook',
-                'mdi-linkedin',
-                'mdi-instagram',
-            ],
-        }),
-    }
+  export default {
+    name: 'Footer',
+        
+    data: () => ({
+      icons: [
+        'mdi-facebook',
+        'mdi-linkedin',
+        'mdi-instagram',
+      ],
+    }),
+  }
 </script>
