@@ -18,7 +18,7 @@
             Here are some things that I love to do:-
         </div>  
         
-        <CardCarousel/>
+        <CardCarousel :data="hobbies"/>
 
          <div class="about-detail">
             Mattis enim ut tellus elementum sagittis vitae et leo duis. Viverra justo nec ultrices dui sapien eget mi. Malesuada fames ac turpis egestas maecenas pharetra convallis. Sodales neque sodales ut etiam sit amet nisl. Sapien pellentesque habitant morbi tristique senectus et netus. Velit laoreet id donec ultrices. Volutpat sed cras ornare arcu dui vivamus. Amet cursus sit amet dictum. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.
@@ -75,10 +75,23 @@
 
     export default {
         name: 'About',
+
+        data: function(){
+            return {
+                isModalOpen: false,
+                sequence: 0,
+                hobbies: [],
+            }
+        },
         
         components: {
             CardCarousel
-        }
+        },
+
+        beforeMount: function(){
+            let dataFile = require("../data/hobbies.json");
+            this.hobbies = dataFile["data"]
+      },
     }
 </script>
 

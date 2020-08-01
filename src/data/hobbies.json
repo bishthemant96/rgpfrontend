@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "hobby-number": "1",
+            "hobby": "Crafting",
+            "hobby-description": "I generated a lot of interest in fabric manipulation during the great lockdown on 2020, I practiced various variations of bookmarks and gifted them to my dear ones."
+        },
+        {
+            "hobby-number": "2",
+            "hobby": "Calligraphy",
+            "hobby-description": "I learnt calligraphy from Popo Pingel while I was interning under Mona Doctor Pingel at Studio Nakshbandi. Popo taught us calligraphy over the span of 40 weekends to teach us about the importance of hand-eye co-ordination in the field of architecture. Ever since, I attained the hobby of pursuing calligraphy as a method of relaxation for self."
+        },
+        {
+            "hobby-number": "3",
+            "hobby": "Pottery",
+            "hobby-description": "During my days in auroville, I used to spend an hour a weekend learning about the practices of pottery and implementing them side by side."
+        },
+        {
+            "hobby-number": "4",
+            "hobby": "Stitching",
+            "hobby-description": "I had interest in stitchin ever since I was a child, I continued this hobby throughout my schooling making various dolls, bookmarks and even dresses for myself, I still continue to make such stuff for myself during my free time."
+        },
+        {
+            "hobby-number": "5",
+            "hobby": "Gardening",
+            "hobby-description": "Gardening is something that I have generated interest in recent times when I was introducted to terrace gardening back in my internship days, I am still very amaturish in it."
+        }
+    ]
+}
