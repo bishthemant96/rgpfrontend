@@ -1,6 +1,6 @@
 <template>
   <div id="projects">    
-    <v-card id="recent-projects" class="section-header" :light='false' @click="$vuetify.goTo('#recent-projects', options)" flat tile> RECENT PROJECTS </v-card>
+    <v-card id="recent-projects" class="section-header" :light='false' @click="$vuetify.goTo('#recent-projects', options)" flat tile outlined> RECENT PROJECTS </v-card>
     
     <v-container class="pa-0" fluid>
       <v-row v-for="num in 2" :key="num" class="mb-6" no-gutters> 

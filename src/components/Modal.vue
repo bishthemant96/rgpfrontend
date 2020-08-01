@@ -7,7 +7,7 @@
                 </v-carousel-item>
             </v-carousel>
 
-            <v-list class="section-style">
+            <v-list class="dialog-style">
             <v-list-item>
                 <v-list-item-avatar>
                 <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
@@ -22,7 +22,7 @@
             </v-list-item>
             </v-list>
 
-            <v-card class="section-style" tile>
+            <v-card class="dialog-style" tile>
             <v-card-title>
                 {{ data["project-name"] }}
             </v-card-title>
@@ -40,6 +40,15 @@
         </v-card>
     </v-dialog>
 </template>
+
+
+
+<style scoped>
+    .dialog-style{
+        background-color: var(--bg-dialog) !important;
+        color: var(--text-dialog) !important;
+    }
+</style>
 
 
 
