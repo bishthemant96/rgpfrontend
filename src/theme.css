@@ -1,7 +1,12 @@
 :root {
-    --ful-left-color: #123c69;
-    --med-left-color: #bab2b5;
-    --med-color: #eee2dc;
-    --med-right-color: #edc7b7;
-    --ful-right-color: #ac3b61;
+    --bg-header: #5d001e;
+    --text-header: #e3e2df;
+    --bg-sub-header: #5d001e;
+    --text-sub-header: #e3e2df;
+    --bg-footer: #5d001e;;
+    --text-footer: #e3e2df;
+    --bg-main: #e3e2df;
+    --text-main: #5d001e;
+    --bg-section: #1e000a;
+    --text-section: #e3e2df;
 }

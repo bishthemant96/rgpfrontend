@@ -18,8 +18,10 @@
         display: flex;
         justify-content: space-between;
 
-        padding: 3% 0%;
+        padding: 3% 1%;
         margin: 0% 8%;
+
+        background-color: var(--bg-header);
     }
 
     .title-container {
@@ -30,7 +32,7 @@
     #title {
         padding-top: 5px;
 
-        color: black !important;
+        color: var(--text-header) !important;
         font-size: 50px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -46,7 +48,7 @@
     }
 
     .nav-item {
-        color: black !important;
+        color: var(--text-header) !important;
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: 300;

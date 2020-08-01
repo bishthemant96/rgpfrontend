@@ -29,6 +29,10 @@
 <style>
     #about{
         margin: 0% 8%;
+        background-color: var(--bg-main);
+        padding: 3% 0%;
+
+        color: var(--text-main);
     }
 
     .introduction {
@@ -42,7 +46,7 @@
     }
 
     .about-introduction {
-        width: 45%;
+        width: 49%;
         
         font-size: 18px;
         font-family: 'Montserrat', sans-serif;

@@ -7,7 +7,7 @@
                 </v-carousel-item>
             </v-carousel>
 
-            <v-list>
+            <v-list class="section-style">
             <v-list-item>
                 <v-list-item-avatar>
                 <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
@@ -22,7 +22,7 @@
             </v-list-item>
             </v-list>
 
-            <v-card>
+            <v-card class="section-style" tile>
             <v-card-title>
                 {{ data["project-name"] }}
             </v-card-title>

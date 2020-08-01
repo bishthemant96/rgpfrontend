@@ -1,5 +1,5 @@
 <template>
-    <v-card class="pa-4" @click="onClick(data['project-number'])">
+    <v-card class="pa-4 section-style" @click="onClick(data['project-number'])" tile>
         <v-row no-gutters>
             <v-col cols="8">
                 <v-img height="350px" :src="require('../assets/project-' + data['project-number'] + '-1.jpg')"/>
@@ -25,12 +25,6 @@
         </v-row>
     </v-card>
 </template>
-
-
-
-<style scoped>
-</style>
-
 
 
 <script>

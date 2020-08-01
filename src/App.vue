@@ -12,8 +12,13 @@
 
 
 
-<style scoped>
+<style>
   @import url("theme.css");
+
+  .section-style {
+    background-color: var(--bg-section) !important;
+    color: var(--text-section) !important;
+  }
 </style>
 
 

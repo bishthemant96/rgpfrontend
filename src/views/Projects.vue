@@ -1,8 +1,8 @@
 <template>
   <div id="projects">    
-    <v-card id="recent-projects" class="section-header" color="black" @click="$vuetify.goTo('#recent-projects', options)" dark flat tile> RECENT PROJECTS </v-card>
+    <v-card id="recent-projects" class="section-header" :light='false' @click="$vuetify.goTo('#recent-projects', options)" flat tile> RECENT PROJECTS </v-card>
     
-    <v-container class="pa-0">
+    <v-container class="pa-0" fluid>
       <v-row v-for="num in 2" :key="num" class="mb-6" no-gutters> 
         <v-col cols="12">
           <WideCard :onClick="onCardClick" :data="projects[num-1]"/> 
@@ -12,9 +12,9 @@
 
     <Modal :data="projects[sequence-1]" :visible="isModalOpen" @closeModal="closeModal()"/>
 
-    <v-card id="other-projects" class="section-header" color="black" @click="$vuetify.goTo('#other-projects', options)" dark flat tile> OTHER PROJECTS </v-card>
+    <v-card id="other-projects" class="section-header" @click="$vuetify.goTo('#other-projects', options)" flat tile> OTHER PROJECTS </v-card>
 
-    <v-container class="pa-0">
+    <v-container class="pa-0" fluid>
       <v-row v-for="i in 2" :key="i" class="mb-6" align="center" justify="space-between" no-gutters>
         <v-col v-for="j in 3" :key="j" cols="12" md="3">
           <Card :onClick="onCardClick" :data="projects[((i-1)*3)+j+1]"/>
@@ -29,6 +29,8 @@
 <style>
   #projects{
     margin: 0% 8%;
+    padding: 3% 0%;
+    background-color: var(--bg-main);
   }
 
   #other-projects{
@@ -43,6 +45,9 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
+
+    background-color: var(--bg-sub-header) !important;
+    color: var(--text-sub-header) !important;
   }
 </style>
 
