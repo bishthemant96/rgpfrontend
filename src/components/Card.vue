@@ -1,8 +1,8 @@
 <template>
     <v-card @click="emitClick()">
         <v-img height="180px" :src="getImagePath()"/>
-        <v-card-title>Care Taker Unit Extension</v-card-title>
-        <v-card-subtitle> Temple Tree Retreat </v-card-subtitle>
+        <v-card-title> {{ data["project-name"].split(',')[0] }} </v-card-title>
+        <v-card-subtitle> {{ data["project-name"].split(',')[1] }} </v-card-subtitle>
     </v-card>
 </template>
 
@@ -13,18 +13,18 @@
         name: "Card",
 
         props:{
-            sequence: String,
             onClick: Function,
+            data: Object,
         },
 
 
         methods: {
             getImagePath: function(){
-                return require('../assets/project-' + this.sequence + '.jpg');
+                return require('../assets/project-' + this.data["project-number"] + '-1.jpg');
             },
 
             emitClick: function(){
-                this.onClick();
+                this.onClick(this.data["project-number"]);
             }
         }
     }

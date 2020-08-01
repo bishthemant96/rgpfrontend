@@ -7,9 +7,9 @@
                 </v-col>
 
                 <v-col cols="4">
-                    <v-card-title>Reception, Temple Tree Retreat</v-card-title>
-                    <v-card-subtitle> Status: under-construction </v-card-subtitle>
-                    <v-card-text> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </v-card-text>
+                    <v-card-title> {{ data["project-name"] }} </v-card-title>
+                    <v-card-subtitle> Status: {{ data["status"] }}  </v-card-subtitle>
+                    <v-card-text> {{ data["project-description"].substring(0,400) + "..." }} </v-card-text>
                     <v-card-actions> 
                         <v-btn text>Read more</v-btn>
                     </v-card-actions>
@@ -31,17 +31,17 @@
         name: "WideCard",
 
         props:{
-            sequence: String,
+            data: Object,
             onClick: Function,
         },
 
         methods: {
             getImagePath: function(){
-                return require('../assets/featured-project-' + this.sequence + '.png');
+                return require('../assets/project-' + this.data["project-number"] + '-1.jpg');
             },
 
             emitClick: function(){
-                this.onClick();
+                this.onClick(this.data["project-number"]);
             }
         }
     }
