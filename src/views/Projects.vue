@@ -1,6 +1,6 @@
 <template>
   <div id="projects">    
-    <v-card class="section-header" color="black" dark flat tile> RECENT PROJECTS </v-card>
+    <v-card id="recent-projects" class="section-header" color="black" @click="$vuetify.goTo('#recent-projects', options)" dark flat tile> RECENT PROJECTS </v-card>
     
     <v-container class="pa-0">
       <v-row v-for="num in 2" :key="num" class="mb-6" no-gutters> 
@@ -12,7 +12,7 @@
 
     <Modal :data="projects[sequence-1]" :visible="isModalOpen" @closeModal="closeModal()"/>
 
-    <v-card id="other-projects" class="section-header" color="black" dark flat tile> OTHER PROJECTS </v-card>
+    <v-card id="other-projects" class="section-header" color="black" @click="$vuetify.goTo('#other-projects', options)" dark flat tile> OTHER PROJECTS </v-card>
 
     <v-container class="pa-0">
       <v-row v-for="i in 2" :key="i" class="mb-6" align="center" justify="space-between" no-gutters>
@@ -67,6 +67,11 @@
           isModalOpen: false,
           sequence: 0,
           projects: [],
+          options: {
+            duration: 500, 
+            offset: 0,
+            easing: 'linear',
+          }
         }
       },
 

@@ -1,6 +1,6 @@
 <template>
     <v-card @click="emitClick()">
-        <v-img height="180px" :src="getImagePath()"/>
+        <v-img height="175px" :src="getImagePath()"/>
         <v-card-title> {{ data["project-name"].split(',')[0] }} </v-card-title>
         <v-card-subtitle> {{ data["project-name"].split(',')[1] }} </v-card-subtitle>
     </v-card>
