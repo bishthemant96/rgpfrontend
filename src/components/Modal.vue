@@ -2,8 +2,8 @@
     <v-dialog max-width="80%" @click:outside="closeModal" v-model="isVisible">
         <v-card elevation="24" max-width="100%" class="mx-auto" height="100%">
             <v-carousel interval="3000" :cycle="cycle" hide-delimiter-background delimiter-icon="mdi-minus">
-                <v-carousel-item v-for="i in 6" :key="i">
-                    <v-img :src="require('../assets/project-'+ data['project-number'] + '-' +Number(i)+'.jpg')" />
+                <v-carousel-item v-for="i in slides" :key="i">
+                    <v-img max-width="100%" max-height="100%" :src="require('../assets/project-'+ data['project-number'] + '-' +Number(i)+'.jpg')" />
                 </v-carousel-item>
             </v-carousel>
 
@@ -62,6 +62,7 @@ export default {
         return {
             isVisible: false,
             cycle: false, 
+            slides: 6
         }
     },
 
@@ -76,6 +77,11 @@ export default {
         visible: function(newValue, oldValue){
             console.log(oldValue);
             this.isVisible = newValue;
+        },
+
+        data: function(){
+            if(this.data["project-number"]>2)
+                this.slides = 2;
         }
     }
 }
