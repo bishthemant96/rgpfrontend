@@ -2,7 +2,7 @@
     --bg-body: #ffffff;
     --bg-main: #ffffff;
     --bg-header: #ffffff;
-    --bg-footer: #ffffff;;
+    --bg-footer: #000000;;
     --bg-sub-section-header: #000000;
     --bg-sub-section: #000000;
     --bg-section-header: #000000;
@@ -14,7 +14,7 @@
 
     --text-main: #000000;
     --text-header: #000000;
-    --text-footer: #000000;
+    --text-footer: #ffffff;
     --text-sub-section-header: #ffffff;
     --text-sub-section: #ffffff;
     --text-section-header: #ffffff;

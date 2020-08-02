@@ -11,14 +11,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/About.vue')
   },
   {
-    path: '/Projects',
-    name: 'Projects',
+    path: '/Portfolio',
+    name: 'Portfolio',
     component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/Projects.vue')
-  },
-  {
-    path: '/Research',
-    name: 'Research',
-    component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/Research.vue')
   }
 ]
 

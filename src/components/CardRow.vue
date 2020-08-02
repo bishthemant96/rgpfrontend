@@ -21,7 +21,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
-        width: 80%;
+        width: 62%;
         margin: auto;
         margin-top: 3%;
         margin-bottom: 3%;

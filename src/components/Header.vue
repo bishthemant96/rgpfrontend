@@ -4,9 +4,8 @@
             <router-link id="title" to="/"> Renuka Gupta </router-link>
         </div>
         <div class="nav-container" id="nav-container">
-            <router-link class="nav-item" to="/"> About </router-link>
-            <router-link class="nav-item" to="/Projects"> Projects </router-link>
-            <router-link class="nav-item" to="/Research"> Research </router-link>
+            <router-link v-if="$route.name!=='About'" class="nav-item" to="/"> ABOUT </router-link>
+            <router-link v-else class="nav-item" to="/Portfolio"> PORTFOLIO </router-link>
         </div>
     </div>
 </template>
@@ -44,7 +43,6 @@
         justify-content: space-between;
         align-items: center;
 
-        width: 25% !important;
     }
 
     .nav-item {
