@@ -49,8 +49,8 @@
     font-size: 24px;
     font-weight: 400;
 
-    background-color: var(--bg-sub-header) !important;
-    color: var(--text-sub-header) !important;
+    background-color: var(--bg-section-header) !important;
+    color: var(--text-section-header) !important;
   }
 
   .section-body{
