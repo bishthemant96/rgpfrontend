@@ -1,6 +1,6 @@
 <template>
     <v-sheet class="card-carousel-container inherit-background" flat>
-        <v-card v-for="n in data.length" :key="n" max-width="20%" class="ma-0 inherit-background" @click="doToggle(n)" flat tile>
+        <v-card v-for="n in data.length" :id="'card-'+ n" :key="n" max-width="20%" class="ma-0 inherit-background" @click="doToggle(n)" flat tile>
             <v-img class="rounded-circle" height="150px" width="150px" :src="require('../assets/hobby-' + n + '.jpg')"/>
             <v-card-subtitle :class="'text-center ' + (model===n? 'sub-section': 'inherit-color') "> {{ data[n-1]["hobby"] }} </v-card-subtitle>
         </v-card>
@@ -68,6 +68,21 @@
             doToggle: function(num){
                 this.model = this.model === num? null : num;
             }
+        },
+
+        mounted: function(){
+            for(let i =1; i<=4; i++){
+                let that = this;
+                let card = document.getElementById("card-"+i);
+                card.onmouseover = function(){
+                    that.model = i;
+                }
+
+                card.onmouseout = function(){
+                    that.model = null;
+                }
+            }
+            
         }
     }
 </script>

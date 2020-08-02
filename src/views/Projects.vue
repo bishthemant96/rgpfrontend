@@ -40,26 +40,6 @@
     padding: 2% 0%;
     background-color: var(--bg-main);
   }
-  
-  .section-header {
-    margin-bottom: 2%;
-
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-
-    background-color: var(--bg-section-header) !important;
-    color: var(--text-section-header) !important;
-  }
-
-  .section-body{
-    margin: 2% 0%;
-    padding: 1% 0% 1% 0%;
-
-    background-color: var(--bg-section);
-    color: var(--text-section);
-  }
 </style>
 
 
