@@ -18,7 +18,7 @@
         display: flex;
         justify-content: space-between;
 
-        padding: 3% 1%;
+        padding: 3% 1% 1% 1%;
         margin: 0% 8%;
 
         background-color: var(--bg-header);

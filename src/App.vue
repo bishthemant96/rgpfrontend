@@ -1,5 +1,5 @@
 <template>
-  <v-app> 
+  <v-app id="main-app"> 
     <Header/>
     
     <v-main>
@@ -15,9 +15,8 @@
 <style>
   @import url("theme.css");
 
-  .section-style {
-    background-color: var(--bg-section) !important;
-    color: var(--text-section) !important;
+  #main-app{
+    background-color: var(--bg-body);
   }
 </style>
 

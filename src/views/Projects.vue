@@ -1,26 +1,34 @@
 <template>
-  <div id="projects">    
-    <v-card id="recent-projects" class="section-header" :light='false' @click="$vuetify.goTo('#recent-projects', options)" flat tile outlined> RECENT PROJECTS </v-card>
-    
-    <v-container class="pa-0" fluid>
-      <v-row v-for="num in 2" :key="num" class="mb-6" no-gutters> 
-        <v-col cols="12">
-          <WideCard :onClick="onCardClick" :data="projects[num-1]"/> 
-        </v-col>
-      </v-row>
-    </v-container>
+  <div id="projects">
+    <section class="section-body">    
+      <v-card id="recent-projects" class="section-header" :light='false' @click="$vuetify.goTo('#recent-projects', options)" flat tile> 
+        RECENT PROJECTS 
+      </v-card>
+
+      <v-container class="pa-0" fluid>
+        <v-row v-for="num in 2" :key="num" class="mb-6" no-gutters> 
+          <v-col cols="12">
+            <WideCard :onClick="onCardClick" :data="projects[num-1]"/> 
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
 
     <Modal :data="projects[sequence-1]" :visible="isModalOpen" @closeModal="closeModal()"/>
 
-    <v-card id="other-projects" class="section-header" @click="$vuetify.goTo('#other-projects', options)" flat tile> OTHER PROJECTS </v-card>
+    <section class="section-body">
+      <v-card id="other-projects" class="section-header" @click="$vuetify.goTo('#other-projects', options)" flat tile> 
+        OTHER PROJECTS 
+      </v-card>
 
-    <v-container class="pa-0" fluid>
-      <v-row v-for="i in 2" :key="i" class="mb-6" align="center" justify="space-between" no-gutters>
-        <v-col v-for="j in 3" :key="j" cols="12" md="3">
-          <Card :onClick="onCardClick" :data="projects[((i-1)*3)+j+1]"/>
-        </v-col>
-      </v-row>
-    </v-container>
+      <v-container class="pa-0" fluid>
+        <v-row v-for="i in 2" :key="i" class="mb-6" align="center" justify="space-between" no-gutters>
+          <v-col v-for="j in 3" :key="j" cols="12" md="3">
+            <Card :onClick="onCardClick" :data="projects[((i-1)*3)+j+1]"/>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
   </div>
 </template>
 
@@ -29,25 +37,28 @@
 <style>
   #projects{
     margin: 0% 8%;
-    padding: 3% 0%;
+    padding: 2% 0%;
     background-color: var(--bg-main);
   }
-
-  #other-projects{
-    margin-top: 10%;
-  }
-
+  
   .section-header {
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 
     text-align: center;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
 
     background-color: var(--bg-sub-header) !important;
     color: var(--text-sub-header) !important;
+  }
+
+  .section-body{
+    margin: 2% 0%;
+    padding: 1% 0% 1% 0%;
+
+    background-color: var(--bg-section);
+    color: var(--text-section);
   }
 </style>
 

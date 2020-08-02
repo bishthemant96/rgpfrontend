@@ -1,14 +1,25 @@
 :root {
-    --bg-header: #5d001e;
-    --text-header: hsl(45, 7%, 88%);
-    --bg-sub-header: #e3e2df;
-    --text-sub-header: #5d001e;
-    --bg-footer: #5d001e;;
-    --text-footer: #e3e2df;
-    --bg-main: #e3e2df;
-    --text-main: #5d001e;
-    --bg-section: #5d001e;
-    --text-section: #e3e2df;
-    --bg-dialog: #e3e2df;
-    --text-dialog: #5d001e;
+    --bg-body: #ffffff;
+    --bg-main: #ffffff;
+    --bg-header: #ffffff;
+    --bg-footer: #ffffff;;
+    --bg-sub-section-header: #ffffff;
+    --bg-sub-section: #000000;
+    --bg-section-header: #000000;
+    --bg-section: #def2f1;
+    --bg-card: #ffffff;
+    --bg-dialog-header: #ffffff;
+    --bg-dialog: #ffffff;
+    
+
+    --text-main: #000000;
+    --text-header: #000000;
+    --text-footer: #000000;
+    --text-sub-section-header: #ffffff;
+    --text-sub-section: #ffffff;
+    --text-section-header: #000000;
+    --text-section: #000000;
+    --text-card: #ffffff;
+    --text-dialog-header: #ffffff;
+    --text-dialog: #000000;
 }
