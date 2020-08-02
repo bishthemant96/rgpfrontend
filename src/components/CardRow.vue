@@ -52,7 +52,7 @@
 
 <script>
     export default {
-        name: "CardCarousel",
+        name: "CardRow",
 
         props: {
             data: Array
