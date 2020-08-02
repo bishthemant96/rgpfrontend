@@ -209,12 +209,12 @@
             }
 
             imageTwo.onmouseover = function(){
-                document.getElementById("card-two").style.marginLeft = "-15%";
+                document.getElementById("card-two").style.marginLeft = "-5%";
                 document.getElementById("card-two").style.marginRight = "40%";
             }
 
             imageTwo.onmouseout = function(){
-                document.getElementById("card-two").style.marginLeft = "-10%";
+                document.getElementById("card-two").style.marginLeft = "0%";
                 document.getElementById("card-two").style.marginRight = "35%";
             }
 
