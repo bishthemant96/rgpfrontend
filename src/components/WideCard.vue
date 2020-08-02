@@ -27,10 +27,10 @@
 </template>
 
 
-<style scoped>
-    .card-style{
-        background-color: var('--bg-card');
-        color: var('--text-card');   
+<style>
+    .card-style {
+        background-color: var(--bg-card) !important;
+        color: var(--text-card) !important;   
     }
 </style>
 

@@ -1,7 +1,7 @@
 <template>
     <v-dialog max-width="80%" @click:outside="closeModal" v-model="isVisible">
         <v-card elevation="24" max-width="100%" class="mx-auto" height="100%">
-            <v-carousel interval="3000" :cycle="cycle" hide-delimiter-background delimiter-icon="mdi-minus">
+            <v-carousel height="450px" interval="3000" :cycle="cycle" hide-delimiter-background delimiter-icon="mdi-minus">
                 <v-carousel-item v-for="i in slides" :key="i">
                     <v-img max-width="100%" max-height="100%" :src="require('../assets/project-'+ data['project-number'] + '-' +Number(i)+'.jpg')" />
                 </v-carousel-item>

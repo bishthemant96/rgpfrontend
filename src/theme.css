@@ -1,5 +1,5 @@
 :root {
-    --bg-body: #ffffff;
+    /* --bg-body: #ffffff;
     --bg-main: #ffffff;
     --bg-header: #ffffff;
     --bg-footer: #ffffff;;
@@ -20,6 +20,31 @@
     --text-section-header: #ffffff;
     --text-section: #000000;
     --text-card: #ffffff;
+    --text-dialog-header: #ffffff;
+    --text-dialog: #000000; */
+
+
+    --bg-body: #ffffff;
+    --bg-main: #ffffff;
+    --bg-header: #ffffff;
+    --bg-footer: #24305e;;
+    --bg-sub-section-header: #000000;
+    --bg-sub-section: #f76c6c;
+    --bg-section-header: #f76c6c;
+    --bg-section: #ffffff;
+    --bg-card: #f7e9a0;
+    --bg-dialog-header: #ffffff;
+    --bg-dialog: #ffffff;
+    
+
+    --text-main: #24305e;
+    --text-header: #24305e;
+    --text-footer: #ffffff;
+    --text-sub-section-header: #ffffff;
+    --text-sub-section: #ffffff;
+    --text-section-header: #ffffff;
+    --text-section: #000000;
+    --text-card: #24305e;
     --text-dialog-header: #ffffff;
     --text-dialog: #000000;
 }
