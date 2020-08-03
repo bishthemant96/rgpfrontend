@@ -18,12 +18,12 @@
 
     <section class="section-body">
       <v-card id="other-projects" class="section-header" @click="$vuetify.goTo('#other-projects', options)" flat tile> 
-        OTHER PROJECTS 
+        OTHER WORKS
       </v-card>
 
       <v-container class="pa-0" fluid>
-        <v-row v-for="i in 2" :key="i" class="mb-6" align="center" justify="space-between" no-gutters>
-          <v-col v-for="j in 3" :key="j" cols="12" md="3">
+        <v-row v-for="i in 2" :key="i" class="mb-6" align="center" justify="space-between">
+          <v-col v-for="j in 3" :key="j" cols="12" md="4">
             <Card :onClick="onCardClick" :data="projects[((i-1)*3)+j+1]"/>
           </v-col>
         </v-row>
@@ -71,7 +71,7 @@
         }
       },
 
-      beforeMount: function(){
+      created: function(){
         let dataFile = require("../data/projects.json");
         this.projects = dataFile["data"]
       },

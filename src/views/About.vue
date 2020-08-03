@@ -60,6 +60,8 @@
         color: var(--text-main);
         font-family: 'Montserrat', sans-serif;
 
+        transition: ease-in 0.5s;
+
     }
 
     .introduction {
