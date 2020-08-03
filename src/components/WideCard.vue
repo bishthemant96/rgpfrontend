@@ -1,11 +1,11 @@
 <template>
-    <v-container class="flex">
+    <v-container class="px-0 py-4 flex">
         <v-row no-gutters>
-            <v-col class="project-photo" cols="8">
+            <v-col class="project-photo" sm="12" md="8">
                 <v-img :id="'project-photo-'+data['project-number']" @click="onClick(data['project-number'])" :src="require('../assets/project-' + data['project-number'] + '-1.jpg')"/>
             </v-col>
 
-            <v-col class="project-detail" cols="4">
+            <v-col class="project-detail" sm="12" md="4">
                 <v-card :id="'project-detail-'+data['project-number']" class="pa-4" tile>
                     <v-card-title> 
                         {{ data["project-name"] }} 
@@ -41,6 +41,12 @@
 
     .project-photo {
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 960px ) {
+        .project-detail {
+            margin-left: 0%;
+        }
     }
 </style>
 

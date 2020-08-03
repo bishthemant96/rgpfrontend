@@ -29,11 +29,9 @@
     }
 
     #title {
-        padding-top: 5px;
-
         color: var(--text-header) !important;
-        font-size: 50px;
         font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
         font-weight: 400;
         text-decoration: none;
     }
@@ -51,6 +49,20 @@
         font-size: 15px;
         font-weight: 300;
         text-decoration: none;
+    }
+
+    @media screen and (max-width: 750px ) {
+        #title {
+            font-size: 20px;
+        }
+
+        .nav-item {
+            font-size: 10px;
+        }
+
+        .head-container {
+            padding: 3% 0% 1% 0%;
+        }
     }
 </style>
 

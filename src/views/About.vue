@@ -2,7 +2,7 @@
     <div id="about">
         <div class="introduction">
             <div id="tagline"> 
-                JUST A GIRL WITH HAPPINESS LIVING IN PLACES. 
+                <span id="tagline-split-1">JUST A GIRL </span> WITH HAPPINESS LIVING IN PLACES. 
             </div>
             <div id="down-arrow">
                 <v-icon @click="$vuetify.goTo('#center-image', options)" x-large> mdi-chevron-down </v-icon>
@@ -59,9 +59,6 @@
 
         color: var(--text-main);
         font-family: 'Montserrat', sans-serif;
-
-        transition: ease-in 0.5s;
-
     }
 
     .introduction {
@@ -158,6 +155,20 @@
         width: 62%;
         text-align: justify;
         text-justify: inter-word;
+    }
+
+
+    @media screen and (max-width: 750px ) {
+        .introduction {
+            height: 90vh;
+            background-size: cover;
+            background-position: right ;
+            color: white;
+        }
+
+        #tagline-split-1{
+            color: black;
+        }
     }
 </style>
 

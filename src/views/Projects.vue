@@ -40,6 +40,10 @@
     padding: 2% 0%;
     background-color: var(--bg-main);
   }
+
+  @media screen and (max-width: 750px ) {
+
+  }
 </style>
 
 
