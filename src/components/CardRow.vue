@@ -1,7 +1,7 @@
 <template>
     <v-sheet class="card-carousel-container inherit-background" flat>
         <v-card v-for="n in data.length" :id="'card-'+ n" :key="n" max-width="20%" class="ma-0 inherit-background" @click="doToggle(n)" flat tile>
-            <v-img class="rounded-circle" height="150px" width="150px" :src="require('../assets/hobby-' + n + '.jpg')"/>
+            <v-img class="circular-border rounded-circle" height="150px" width="150px" :src="require('../assets/hobby-' + n + '.jpg')"/>
             <v-card-subtitle :class="'text-center ' + (model===n? 'sub-section': 'inherit-color') "> {{ data[n-1]["hobby"] }} </v-card-subtitle>
         </v-card>
 
@@ -46,6 +46,10 @@
     .sub-section {
         background-color: var(--bg-sub-section) !important;
         color: var(--text-sub-section) !important;
+    }
+
+    .circular-border {
+        border: 2px solid var(--bg-sub-section);
     }
 </style>
 

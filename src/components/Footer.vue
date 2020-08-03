@@ -40,9 +40,9 @@
         
     data: () => ({
       icons: [
-        'mdi-facebook',
         'mdi-linkedin',
         'mdi-instagram',
+        'mdi-facebook',
       ],
     }),
   }
