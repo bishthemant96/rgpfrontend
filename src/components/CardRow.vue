@@ -5,11 +5,9 @@
             <v-card-subtitle :class="'text-center ' + (model===n? 'sub-section': 'inherit-color') "> {{ data[n-1]["hobby"] }} </v-card-subtitle>
         </v-card>
 
-        <v-expand-transition>
-            <v-sheet v-if="model != null"  class="hobby-description sub-section" width="100%" tile>
-                {{data[model-1]["hobby-description"]}}
-            </v-sheet>
-        </v-expand-transition>
+        <v-sheet v-if="model != null"  class="hobby-description sub-section" width="100%" tile>
+            {{data[model-1]["hobby-description"]}}
+        </v-sheet>
     </v-sheet>
 </template>
 
@@ -64,13 +62,13 @@
 
         data(){
             return {
-                model: null
+                model: 1
             }
         },
         
         methods: {
             doToggle: function(num){
-                this.model = this.model === num? null : num;
+                this.model = num;
             }
         },
 
@@ -80,10 +78,6 @@
                 let card = document.getElementById("card-"+i);
                 card.onmouseover = function(){
                     that.model = i;
-                }
-
-                card.onmouseout = function(){
-                    that.model = null;
                 }
             }
             
