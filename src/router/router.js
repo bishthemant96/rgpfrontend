@@ -1,4 +1,3 @@
-//Importing external packages.
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
@@ -8,12 +7,12 @@ const routes = [
   {
     path: '/',
     name: 'About',
-    component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/About.vue')
+    component: () => import('@/views/About.vue')
   },
   {
     path: '/Portfolio',
     name: 'Portfolio',
-    component: () => import(/* webpackChunkName: "chunk-confirmation" */'@/views/Projects.vue')
+    component: () => import('@/views/Portfolio.vue')
   }
 ]
 
@@ -23,4 +22,4 @@ const router = new VueRouter({
   routes
 })
 
-export default router
+export default router;

@@ -54,7 +54,7 @@
   import Modal from "@/components/Modal.vue";
   
   export default {
-      name: 'Projects',
+      name: 'Portfolio',
 
       components: {
         Card,
