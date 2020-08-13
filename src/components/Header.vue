@@ -1,12 +1,8 @@
 <template>
     <div class="head-container">
-        <div class="title-container" id="title-container">
-            <router-link id="title" to="/"> Renuka Gupta </router-link>
-        </div>
-        <div class="nav-container" id="nav-container">
-            <router-link v-if="$route.name!=='About'" class="nav-item" to="/"> ABOUT </router-link>
-            <router-link v-else class="nav-item" to="/Portfolio"> PORTFOLIO </router-link>
-        </div>
+        <router-link id="title" to="/"> RENUKA GUPTA </router-link>
+        <router-link v-if="$route.name!=='About'" class="nav-item" to="/"> ABOUT </router-link>
+        <router-link v-else class="nav-item" to="/Portfolio"> PORTFOLIO </router-link>
     </div>
 </template>
 
@@ -16,31 +12,22 @@
     .head-container {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
 
-        padding: 3% 1% 1% 1%;
+        padding: 3% 0% 2% 0%;
         margin: 0% 8%;
 
         background-color: var(--bg-header);
     }
 
-    .title-container {
-        display: flex;
-        align-items: center;
-    }
-
     #title {
         color: var(--text-header) !important;
         font-family: 'Montserrat', sans-serif;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 400;
+        letter-spacing: -2px;
         text-decoration: none;
-    }
-
-    .nav-container {
-        display: flex !important;
-        justify-content: space-between;
-        align-items: center;
-
+        line-height: 1;
     }
 
     .nav-item {

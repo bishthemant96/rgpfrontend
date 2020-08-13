@@ -5,7 +5,7 @@
     --bg-footer: #ffffff;;
     --bg-sub-section-header: #000000;
     --bg-sub-section: #000000;
-    --bg-section-header: #000000;
+    --bg-section-header: #ffffff;
     --bg-section: #ffffff;
     --bg-card: #ffffff;
     --bg-dialog-header: #ffffff;
@@ -13,13 +13,13 @@
     
 
     --text-main: #000000;
-    --text-header: #000000;
+    --text-header: #ce071e;
     --text-footer: #000000;
     --text-sub-section-header: #ffffff;
     --text-sub-section: #ffffff;
-    --text-section-header: #ffffff;
+    --text-section-header: #000000;
     --text-section: #000000;
-    --text-card: #000000;
+    --text-card: #ce071e;
     --text-dialog-header: #ffffff;
     --text-dialog: #000000;
 }
