@@ -15,7 +15,7 @@
             <div class="column-one"> 
                 <v-card id="card-one" flat>
                     <v-card-title> 
-                        HERE'S WHERE I STARTED MY JOUNRNEY BACK THEN
+                        HERE'S WHERE I STARTED MY JOUNRNEY BACK THEN 
                     </v-card-title>
                     <v-card-text>
                         I graduated from MBS School of Planning and Architecture with Bachelors of Architecture in 2020 with a specialisation in building biology, also I would like to say the bla bla is bla bl abassa aldjskjd adjklsa ld klajds .  
